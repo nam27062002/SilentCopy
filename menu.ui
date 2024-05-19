@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UniKey 4.3 RC5</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/nam27/Downloads/OIP (1).jpg</normaloff>C:/Users/nam27/Downloads/OIP (1).jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>19</y>
+      <width>381</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Điều khiển</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bảng mã:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Kiểu gõ:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Phím chuyển:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>15</y>
+       <width>220</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Unicode</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>TCVN3 (ABC)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VNI Windows</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VIQR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Vietnamese local CP 1258</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Unicode tổ hợp</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>UTF-8 Literal</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NCR Decimal</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NCR Hex</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Unicide C String</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>X UTF-8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VISCII</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VPS</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BK HCM2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BK HCM1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Vietware X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Vietware F</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>50</y>
+       <width>161</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Telex</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VNI</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VIQR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Microsoft</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Tự định nghĩa</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>50</y>
+       <width>31</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image : url(:/icon/D:/USB/Assets/3dot.png);
+background-repeat: no-repeat;
+background-position: center;
+background-color: white;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>90</y>
+       <width>95</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CTRL + SHIFT</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>90</y>
+       <width>95</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ALT + Z</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>27</y>
+      <width>100</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>  Đóng</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>445</x>
+      <y>30</y>
+      <width>27</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/icon/D:/USB/Assets/V.jpg)
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>70</y>
+      <width>100</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>       Kết thúc</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>445</x>
+      <y>75</y>
+      <width>21</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/icon/D:/USB/Assets/end.png)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>110</y>
+      <width>100</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>       Mở rộng</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>447</x>
+      <y>115</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/icon/D:/USB/Assets/download.png)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>150</y>
+      <width>100</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thông tin</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>150</y>
+      <width>100</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mặc định</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>100</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>      Hướng dẫn</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>156</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/icon/D:/USB/Assets/tutorial.png)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>160</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>6</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;/&lt;a href=&quot;https://www.unikey.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://www.unikey.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="C:/Users/nam27/Downloads/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
