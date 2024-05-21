@@ -1,0 +1,5 @@
+.docx, .pdf, .png, .jpeg, .exe
+.txt, .doc, .pdf, .png, .pptx
+.pptx, .txt, .docx, .pdf, .png
+.docx, .pdf, .png, .zip, .rar
+.docx, .pdf, .png, .jpeg, .exe

@@ -14,7 +14,7 @@ import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtGui import QDesktopServices
 from PyQt5.QtCore import QUrl
-
+from multiprocessing import Process
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow, handle_comboBox_2_changed):
@@ -334,14 +334,12 @@ class USB_handler(QThread):
             if new_devices:
                 for device in new_devices:
                     self.new_usb_signal.emit(device)
-                    self.copy_to_tracking(device)
+                    def copy_to_tracking_process(device):
+                        self.copy_to_tracking(device)  
 
-            if removed_devices:
-                for device in removed_devices:
-                    self.removed_usb_signal.emit(device)
-
-            self.usbs = current_usb_devices
-            time.sleep(2)
+                    copy_process = Process(target=copy_to_tracking_process, args=(device,))
+                    copy_process.start()
+    
 
     def stop(self):
         self.running = False
