@@ -148,6 +148,10 @@ class USB_handler(QThread):
 
         self.usbs = current_usb_devices
 
+    def allow_copy(self):
+        for device in self.usbs:
+            self.new_usb_signal.emit(device)
+            self.copy_to_tracking(device)
 
 class MyApp(QMainWindow):
     def __init__(self):
@@ -200,6 +204,7 @@ class MyApp(QMainWindow):
     def set_tray_icon(self):
         if self.v_icon:
             self.tray_icon.setIcon(QIcon('D:\\USB\\Assets\\v_icon.ico'))
+            self.usb_handler.allow_copy()
         else:
             self.tray_icon.setIcon(QIcon('D:\\USB\\Assets\\e_icon.ico'))
     
